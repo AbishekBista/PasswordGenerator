@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #1F2937;
+    height: 600px;
+    width: 550px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 115px;
+    border-radius: 6px;
+}
+
+#upper {
+    color: white;
+    font-size: 40px;
+    margin-bottom: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: -0.025em;
+    font-weight: 800;
+}
+
+#lower {
+    color: #4ADF86;
+    font-size: 40px;
+    margin-top: 0px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: -20px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #2F3E53;
+    padding-top: 35px;
+}
+
+.flex-box-control {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+#description {
+    color: #D5D4D8;
+    font-size: 20px;
+    padding-bottom: 51px;
+    margin-bottom: -50px;
+}
+
+#generate-btn {
+    display: block;
+    width: 191px;
+    height: 42px;
+    font-weight: 500;
+    background-color: #10B981;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 44px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 6px;
+
+}
+.password-text {
+    background-color: #273549;
+    width: 211px;
+    height: 39px;
+    border: none;
+    border-radius: 6px;
+    color: #55F991;
+}
+
+
+label {
+    display: block;
+    color: #D5D4D8;
+    font-size: 20px; 
+    padding-bottom: 15px;
+}
+
+#password-length {
+     border-right: 1px solid #10B981;
+     border-bottom: 1px solid #10B981;
+     background-color: #1F2937;
+     width: 211px;
+     height: 39px;
+     margin-bottom: 10px;
+     border-top: none;
+     border-left: none;
+     color: #10B981    
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  height: 35px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
