@@ -114,9 +114,10 @@ function setPasswordText() {
   secondPasswordEl.textContent = generatePasswordText();
 }
 
-async function copyText(button) {
+function copyText(button) {
   let copyEl = document.getElementById(button);
   navigator.clipboard.writeText(copyEl.textContent);
+  alert("Copied to clipboard: " + copyEl.textContent);
   console.log("Copied text: " + copyEl.textContent);
 }
 
